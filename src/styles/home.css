@@ -1,0 +1,120 @@
+.home{
+    background-color: rgb(255, 255, 255);
+}
+.home-background{
+    width: 50vw;
+    height: auto;
+    display: none;
+    opacity: 0.3;
+    margin: auto;
+    margin-top: -25%;
+}
+.home-logo{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 100px;
+}
+.offcanvas-end{
+    width: 80% !important;
+}
+.home-btn-group{
+    position: fixed !important;
+    bottom: 55%;
+    right: -2%;
+    transform: rotate(90deg);
+}
+.about-btn{
+    padding: 10% 20% !important;
+    background-image: linear-gradient( rgb(19, 226, 233),rgb(35, 23, 202),rgb(2, 3, 80));
+}
+.home-contact-btns{
+    position: fixed !important;
+    bottom: 5% ;
+}
+.contact-btn{
+    padding: 20px 15px !important; 
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+.home-content{
+    margin-top: 15% !important;
+}
+.background-logo{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    opacity: 0.2;
+}
+.hello{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 700;
+    font-size: 500%;
+    margin-left: 10%;
+    color: rgb(220, 20, 120);
+}
+.intro{
+    font-size: 250%;
+    margin-left: 10%;
+}
+.icon-logo{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    opacity: 0.3;
+}
+@media(max-width: 992px){
+    .hello{
+        font-size: 400%;
+        margin-left: 10%;
+    }
+    .intro{
+        font-size: 200%;
+        margin-left: 10%;
+    }
+    .home-content{
+        margin-top: 25% !important;
+    }
+    .icon-logo{
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .home-logo{
+        left: 3%;
+    }
+    .home-btn-group{
+        right: -4%;
+    }
+    .hello{
+        font-size: 350%;
+        margin-left: 10%;
+    }
+    .intro{
+        font-size: 150%;
+        margin-left: 10%;
+    }
+    .home-content{
+        margin-top: 35% !important;
+    }
+}
+@media(max-width: 768px){
+    .home-logo{
+        left: 3%;
+    }
+    .home-btn-group{
+        right: -6%;
+    }
+}
+@media(max-width: 576px){
+    .home-logo{
+        left: -3%;
+    }
+    .home-btn-group{
+        bottom: 40%;
+        right: -8%;
+    }
+}
+.row {
+     --bs-gutter-x: 0 !important;
+}
