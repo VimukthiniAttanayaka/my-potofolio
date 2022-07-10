@@ -19,7 +19,7 @@ function App() {
       />
       </div>
       <div className={isDarkMode?"background":""}>
-      <ParticlesBg color={isDarkMode?"#FFFFFF":"#000000"} num={150} type="cobweb" bg={true} />
+      <ParticlesBg color={isDarkMode?"#C0C0C0":"#000000"} num={150} type="cobweb" bg={true} />
       </div>
       <Home theme={isDarkMode}/>
     </div>

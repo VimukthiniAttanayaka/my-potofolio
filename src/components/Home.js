@@ -6,6 +6,7 @@ import { Image, Button, Offcanvas, ButtonGroup } from 'react-bootstrap';
 import iconLogo from '../images/white.webp';
 import iconLogo1 from '../images/black.webp';
 import { GitHub, Linkedin, PhoneCall } from "react-feather";
+import Contact from "./Contact";
 
 function Home(props) {
 
@@ -37,7 +38,7 @@ function Home(props) {
                     <h1 className={props.theme ? "intro intro-dark" : "intro"}>
                         I'm Vimukthini, a <br />
                         full stack developer <br />
-                        based on Sri Lanka</h1>
+                        based in Sri Lanka</h1>
                 </div>
                 <div className="col-12 col-lg-5 px-0">
                     <Image
@@ -52,31 +53,51 @@ function Home(props) {
                 <Button onClick={handleShowContact} className='about-btn'>Contact</Button>
             </ButtonGroup>
 
-            <Offcanvas show={showAbout} onHide={handleCloseAbout} placement="end">
+            <Offcanvas
+                show={showAbout}
+                onHide={handleCloseAbout}
+                placement="end"
+                className={props.theme ? 'about-dark' : 'about'}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>About Me</Offcanvas.Title>
+                    <Offcanvas.Title
+                        className={props.theme ? "title-dark" : "title"}>
+                        About Me
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     Some text as placeholder. In real life you can have the elements you
                     have chosen. Like, text, images, lists, etc.
                 </Offcanvas.Body>
             </Offcanvas>
-            <Offcanvas show={showWork} onHide={handleCloseWork} placement="end">
+            <Offcanvas
+                show={showWork}
+                onHide={handleCloseWork}
+                placement="end"
+                className={props.theme ? 'work-dark' : 'work'}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>My Work</Offcanvas.Title>
+                    <Offcanvas.Title
+                        className={props.theme ? "title-dark" : "title"}>
+                        My Work
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     Some text as placeholder. In real life you can have the elements you
                     have chosen. Like, text, images, lists, etc.
                 </Offcanvas.Body>
             </Offcanvas>
-            <Offcanvas show={showContact} onHide={handleCloseContact} placement="end">
+            <Offcanvas
+                show={showContact}
+                onHide={handleCloseContact}
+                placement="end"
+                className={props.theme ? 'contact-dark' : 'contact'}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Contact Me</Offcanvas.Title>
+                    <Offcanvas.Title
+                        className={props.theme ? "title-dark" : "title"}>
+                        Contact Me
+                    </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    <Contact theme={props.theme}/>
                 </Offcanvas.Body>
             </Offcanvas>
             <ButtonGroup vertical className="home-contact-btns">
