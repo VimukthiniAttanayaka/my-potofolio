@@ -7,6 +7,7 @@ import iconLogo from '../images/white.webp';
 import iconLogo1 from '../images/black.webp';
 import { GitHub, Linkedin, PhoneCall } from "react-feather";
 import Contact from "./Contact";
+import About from "./About";
 
 function Home(props) {
 
@@ -65,8 +66,7 @@ function Home(props) {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    <About theme={props.theme}/>
                 </Offcanvas.Body>
             </Offcanvas>
             <Offcanvas

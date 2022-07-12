@@ -3,10 +3,9 @@ import '../styles/contact.css';
 import '../styles/contact_dark.css';
 import { Form, Button } from 'react-bootstrap';
 import { Mail, PhoneCall, Image } from "react-feather";
-import fb from '../images/fb.jpg';
-import whatsapp from '../images/whatsapp.jpg';
-import twitter from '../images/twitter.jpg';
-import linkdin from '../images/linkdin.jpg';
+import fb from '../images/fb1.webp';
+import whatsapp from '../images/whatsapp1.webp';
+import linkdin from '../images/linkdin1.webp';
 
 function Contact(props) {
 
