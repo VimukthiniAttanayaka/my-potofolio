@@ -1,0 +1,139 @@
+.about{
+    /* background-color: rgb(200, 243, 194) !important; */
+    background-color: rgb(194, 209, 243) !important;
+}
+.dp{
+    width: 60%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name{
+    display: flex !important;
+    justify-content: center;
+    color: deeppink;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: bolder;
+    font-size: 60px;
+}
+.my-dis{
+    color: #030359;
+    font-size: 18px;
+    font-weight: bold;
+}
+.my-dis-dark{
+    color: #66c4e3;
+    font-size: 18px;
+    font-weight: bold;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+.soft-skill{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color:  #CD505A;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+.expreance{
+}
+
+
+.animate-charcter
+{
+    /*text-transform: uppercase;*/
+    background-image: linear-gradient(
+            -225deg,
+            #2e8935 0%,
+            #4f9c33 29%,
+            #7cbe29 67%,
+            #9edf0a 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.imposible h1{
+    color: #484848;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+.imposible h1{
+    background-color: #00ff99;
+}
+.imposible h1 span{
+    transition: .5s linear
+}
+.imposible h1:hover span:nth-child(1){
+    margin-right: 5px
+}
+.imposible h1:hover span:nth-child(1):after{
+    content: "'";
+}
+.imposible h1:hover span:nth-child(2){
+    margin-left: 30px
+}
+.imposible h1:hover span{
+    color: #1346b4;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff;
+}
+
+@media(max-width: 576px){
+    .name{
+        font-size: 20px;
+    }
+    .skills{
+        font-size: 17px;
+    }
+    .soft-skill{
+        font-size: 17px;
+    }
+    .imposible h1{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-dark{
+    background-color: rgb(59, 64, 75) !important;
+}
