@@ -8,6 +8,7 @@ import iconLogo1 from '../images/black.webp';
 import { GitHub, Linkedin, PhoneCall } from "react-feather";
 import Contact from "./Contact";
 import About from "./About";
+import Work from "./Work";
 
 function Home(props) {
 
@@ -66,7 +67,7 @@ function Home(props) {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <About theme={props.theme}/>
+                    <About theme={props.theme} />
                 </Offcanvas.Body>
             </Offcanvas>
             <Offcanvas
@@ -81,8 +82,7 @@ function Home(props) {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    Some text as placeholder. In real life you can have the elements you
-                    have chosen. Like, text, images, lists, etc.
+                    <Work theme={props.theme} />
                 </Offcanvas.Body>
             </Offcanvas>
             <Offcanvas
@@ -97,7 +97,7 @@ function Home(props) {
                     </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    <Contact theme={props.theme}/>
+                    <Contact theme={props.theme} />
                 </Offcanvas.Body>
             </Offcanvas>
             <ButtonGroup vertical className="home-contact-btns">

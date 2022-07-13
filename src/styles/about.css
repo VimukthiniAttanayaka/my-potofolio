@@ -42,9 +42,6 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
 }
-.expreance{
-}
-
 
 .animate-charcter
 {
@@ -60,7 +57,6 @@
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;

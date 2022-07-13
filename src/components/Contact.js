@@ -40,20 +40,20 @@ function Contact(props) {
                             <PhoneCall className={props.theme?"white-text":""}/>
                         </div>
                         <div className="col-11 ps-3" xs={10}>
-                            <p className={props.theme?"white-text":""}>0755975740</p>
+                            <h5 className={props.theme?"white-text":""}>0755975740</h5>
                         </div>
                     </div>
-                    <div className="row email">
+                    <div className="row email my-4">
                         <div className="col-1" xs={1}>
                             <Mail className={props.theme?"white-text":""}/>
                         </div>
                         <div className="col-11 ps-3" xs={10}>
-                            <p className={props.theme?"white-text":""}>vimukthinia@gmail.com</p>
+                            <h5 className={props.theme?"white-text":""}>vimukthinia@gmail.com</h5>
                         </div>
                     </div>
                     <div>
-                        <h5 className={props.theme?"white-text ms-5":"ms-5"}>Follow me on :-</h5>
-                        <div xs={12} className="ms-5 ps-5 social">
+                        <h4 className={props.theme?"white-text ms-5":"ms-5"}>Follow me on :-</h4>
+                        <div xs={12} className="ms-5 ps-5 social mt-3">
                             <img src={linkdin} alt=""/>
                             <img src={whatsapp} alt=""/>
                             <img src={fb} alt=""/>
