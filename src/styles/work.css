@@ -46,6 +46,9 @@
     color: rgb(33, 208, 252);
     font-family: 'Roboto Condensed', sans-serif;
 }
+.flutter{
+    width: 50%;
+}
 @media(max-width:768px){
     .carousel-caption{
         width: 100%;

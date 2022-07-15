@@ -2,6 +2,12 @@ import React from "react";
 import '../styles/work.css';
 import Carousel from 'react-bootstrap/Carousel';
 import library from '../images/library.webp';
+import mark from '../images/markapp.webp';
+import lms from '../images/lms.webp';
+import cal from '../images/cal.webp';
+import form from '../images/form.webp';
+import map from '../images/map.webp';
+import swing from '../images/swing.webp';
 import react from '../images/react.webp';
 import redux from '../images/redux.webp';
 import boot from '../images/boot.webp';
@@ -42,14 +48,13 @@ function Work(props) {
                         <div className='col-12 col-md-6 demo-item'>
                             <img
                                 className="d-block w-100 demo-img"
-                                src={library}
+                                src={mark}
                                 alt="First slide"
                             />
                             <Carousel.Caption className='demo-deta'>
-                                <h3>React Library app</h3>
+                                <h3>React Mark app</h3>
                                 <p className='demo-icon mb-4'>
                                     <img src={react} />
-                                    <img src={redux} />
                                     <img src={scss} />
                                     <img src={boot} />
                                     <img src={types} />
@@ -60,30 +65,25 @@ function Work(props) {
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                        alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
+                    <div className='row'>
+                        <div className='col-12 col-md-6 demo-item'>
+                            <img
+                                className="d-block w-100 demo-img"
+                                src={lms}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption className='demo-deta'>
+                                <h3>Learning Management System</h3>
+                                <p className='demo-icon mb-4'>
+                                    <img src={react} />
+                                    <img src={scss} />
+                                    <img src={boot} />
+                                    <img src={types} />
+                                </p>
+                                <a className="demo">Demo ➔</a>
+                            </Carousel.Caption>
+                        </div>
+                    </div>
                 </Carousel.Item>
             </Carousel>
             <h4 className={props.theme?'work-title-dark':'work-title'}>Html 👇🏻</h4>
@@ -93,30 +93,18 @@ function Work(props) {
                         <div className='col-12 col-md-6 demo-item'>
                             <img
                                 className="d-block w-100 demo-img"
-                                src={library}
+                                src={cal}
                                 alt="First slide"
                             />
                             <Carousel.Caption className='demo-deta'>
-                                <h3>React Library app</h3>
+                                <h3>Calculater</h3>
                                 <p className='demo-icon mb-4'>
-                                    <img src={react} />
-                                    <img src={redux} />
-                                    <img src={scss} />
+                                    <img src={html} />
+                                    <img src={css} />
+                                    <img src={js} />
                                     <img src={boot} />
-                                    <img src={types} />
                                 </p>
                                 <a className="demo">Demo ➔</a>
-                            </Carousel.Caption>
-                        </div>
-                        <div className='col-12 col-md-6 demo-item'>
-                            <img
-                                className="d-block w-100"
-                                src={library}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </div>
                     </div>
@@ -129,30 +117,15 @@ function Work(props) {
                         <div className='col-12 col-md-6 demo-item'>
                             <img
                                 className="d-block w-100 demo-img"
-                                src={library}
+                                src={swing}
                                 alt="First slide"
                             />
                             <Carousel.Caption className='demo-deta'>
-                                <h3>React Library app</h3>
+                                <h3>Java Swing Shopping App</h3>
                                 <p className='demo-icon mb-4'>
-                                    <img src={react} />
-                                    <img src={redux} />
-                                    <img src={scss} />
-                                    <img src={boot} />
-                                    <img src={types} />
+                                    <img src={java} />
                                 </p>
                                 <a className="demo">Demo ➔</a>
-                            </Carousel.Caption>
-                        </div>
-                        <div className='col-12 col-md-6 demo-item'>
-                            <img
-                                className="d-block w-100"
-                                src={library}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </div>
                     </div>
@@ -164,31 +137,30 @@ function Work(props) {
                     <div className='row'>
                         <div className='col-12 col-md-6 demo-item'>
                             <img
-                                className="d-block w-100 demo-img"
-                                src={library}
+                                className="d-block demo-img flutter"
+                                src={form}
                                 alt="First slide"
                             />
                             <Carousel.Caption className='demo-deta'>
-                                <h3>React Library app</h3>
+                                <h3>Flutter Form</h3>
                                 <p className='demo-icon mb-4'>
-                                    <img src={react} />
-                                    <img src={redux} />
-                                    <img src={scss} />
-                                    <img src={boot} />
-                                    <img src={types} />
+                                    <img src={flutter} />
                                 </p>
                                 <a className="demo">Demo ➔</a>
                             </Carousel.Caption>
                         </div>
                         <div className='col-12 col-md-6 demo-item'>
                             <img
-                                className="d-block w-100"
-                                src={library}
+                                className="d-block demo-img flutter"
+                                src={map}
                                 alt="First slide"
                             />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <Carousel.Caption className='demo-deta'>
+                                <h3>Flutter Map</h3>
+                                <p className='demo-icon mb-4'>
+                                    <img src={flutter} />
+                                </p>
+                                <a className="demo">Demo ➔</a>
                             </Carousel.Caption>
                         </div>
                     </div>
