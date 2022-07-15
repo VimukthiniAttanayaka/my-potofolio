@@ -1,0 +1,15 @@
+.contact-dark{
+    /*background-color: rgb(56, 45, 45) !important;*/
+    background-color: rgb(59, 64, 75) !important;
+}
+.title-dark{
+    font-size: 200% !important;
+    color: white;
+}
+.white-text{
+    color: white;
+}
+.contact-text-dark{
+    font-family: 'Edu TAS Beginner', cursive;
+    color: rgb(0, 162, 255);
+}

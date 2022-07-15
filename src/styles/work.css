@@ -1,0 +1,61 @@
+.work{
+    background-color: rgb(194, 209, 243) !important;
+}
+.work-dark{
+    background-color: rgb(59, 64, 75) !important;
+}
+.carousel-caption{
+    bottom: unset !important;
+    right: unset !important;
+    left: unset !important;
+    width: 50%;
+    height: 100%;
+    padding: 0 !important;
+    display: block;
+    padding-top: 10% !important;
+}
+.demo-item{
+    display: flex;
+    justify-content: center;
+}
+.demo{
+    background-image: linear-gradient( 90deg, #2d8634, #9bda0a);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 100px;
+}
+.demo-item :hover{
+    display: block;
+    background-color: rgb(0,0,0, 0.5) !important;
+}
+
+.demo-icon img{
+    height: 30px;
+    padding: 0 10px;
+    pointer-events: none;
+}
+.work-title{
+    color: darkblue;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.work-title-dark{
+    color: rgb(33, 208, 252);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.flutter{
+    width: 50%;
+}
+@media(max-width:768px){
+    .carousel-caption{
+        width: 100%;
+    }
+}
+@media(max-width:450px){
+    .demo{
+        margin: 0 50px;
+    }
+}
