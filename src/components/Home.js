@@ -29,7 +29,7 @@ function Home(props) {
         <div className={props.theme ? "home-dark" : "home"}>
             <Image src={logo} className='home-logo' alt="" />
             <div className="row home-content">
-                <div className="col-4 col-sm-4 col-lg-3 px-0">
+                <div className="col-2 col-sm-4 col-lg-3 px-0">
                     <Image
                         alt=""
                         src={logo}
@@ -50,9 +50,9 @@ function Home(props) {
                 </div>
             </div>
             <ButtonGroup aria-label="Basic example" className="home-btn-group">
-                <Button onClick={handleShowAbout} className='about-btn'>About</Button>
-                <Button onClick={handleShowWork} className='about-btn'>Work</Button>
-                <Button onClick={handleShowContact} className='about-btn'>Contact</Button>
+                <Button onClick={handleShowAbout} className={props.theme ?"about-btn-dark":'about-btn'}>About</Button>
+                <Button onClick={handleShowWork} className={props.theme ?"about-btn-dark":'about-btn'}>Work</Button>
+                <Button onClick={handleShowContact} className={props.theme ?"about-btn-dark":'about-btn'}>Contact</Button>
             </ButtonGroup>
 
             <Offcanvas
