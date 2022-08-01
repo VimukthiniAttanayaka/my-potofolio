@@ -29,7 +29,7 @@ function Home(props) {
         <div className={props.theme ? "home-dark" : "home"}>
             <Image src={logo} className='home-logo' alt="" />
             <div className="row home-content">
-                <div className="col-2 col-sm-4 col-lg-3 px-0">
+                <div className="col-4 col-sm-4 col-lg-3 px-0">
                     <Image
                         alt=""
                         src={logo}
@@ -104,19 +104,19 @@ function Home(props) {
                 <Button
                     href="tel:0755975740"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <PhoneCall />
+                    <PhoneCall className="con-icon"/>
                 </Button>
                 <Button
                     href="https://www.linkedin.com/in/vimukthini-attanayaka-29284a201/"
                     target="_blank"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <Linkedin />
+                    <Linkedin className="con-icon"/>
                 </Button>
                 <Button
                     href="https://github.com/VimukthiniAttanayaka"
                     target="_blank"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <GitHub />
+                    <GitHub className="con-icon"/>
                 </Button>
             </ButtonGroup>
         </div>
