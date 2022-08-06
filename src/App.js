@@ -15,11 +15,11 @@ function App() {
       <DarkModeToggle
         onChange={setIsDarkMode}
         checked={isDarkMode}
-        size={80}
+        size={40}
       />
       </div>
       <div className={isDarkMode?"background":""}>
-      <ParticlesBg color={isDarkMode?"#C0C0C0":"#000000"} num={150} type="cobweb" bg={true} />
+      <ParticlesBg color={isDarkMode?"#C0C0C0":"#000000"} num={45} type="cobweb" bg={true} />
       </div>
       <Home theme={isDarkMode}/>
     </div>

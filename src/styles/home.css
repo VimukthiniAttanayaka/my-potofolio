@@ -20,13 +20,20 @@
 }
 .home-btn-group{
     position: fixed !important;
-    bottom: 55%;
+    top: 5%;
+    right: 20%;
+    /* bottom: 55%;
     right: -2%;
-    transform: rotate(90deg);
+    transform: rotate(90deg); */
 }
 .about-btn{
-    padding: 10% 20% !important;
-    background-image: linear-gradient( rgb(19, 226, 233),rgb(35, 23, 202),rgb(2, 3, 80));
+    padding: 5% 10% !important;
+    background-image: linear-gradient( rgb(249, 250, 250),rgb(159, 154, 241),rgb(255, 255, 255));
+    /* background-image: linear-gradient( rgb(249, 250, 250),rgb(159, 154, 241),rgb(55, 58, 243)); */
+    color: black !important;
+    font-weight: bold !important;
+    margin: 10px;
+    border: none !important;
 }
 .home-contact-btns{
     position: fixed !important;
@@ -84,7 +91,7 @@
         left: 3%;
     }
     .home-btn-group{
-        right: -4%;
+        right: 20%;
     }
     .hello{
         font-size: 350%;
@@ -98,21 +105,23 @@
         margin-top: 35% !important;
     }
 }
-@media(max-width: 768px){
-    .home-logo{
-        left: 3%;
-    }
-    .home-btn-group{
-        right: -6%;
-    }
-}
 @media(max-width: 576px){
     .home-logo{
         left: -3%;
     }
     .home-btn-group{
-        bottom: 40%;
-        right: -8%;
+        top: 7%;
+        right: 30%;
+    }
+    .about-btn{
+        font-size: 13px !important;
+
+    }
+    .contact-btn{
+        padding: 10px 7.5px !important; 
+    }
+    .con-icon{
+        width: 20px;
     }
 }
 .row {

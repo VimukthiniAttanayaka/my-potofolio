@@ -20,10 +20,27 @@
     display: flex;
     position: absolute;
     margin: auto;
-    opacity: 0.18;
+    opacity: 0.3;
 }
+.about-btn-dark{
+    padding: 5% 10% !important;
+    background-image: linear-gradient( rgb(249, 250, 250),rgb(159, 154, 241),rgb(55, 58, 243));
+    color: black !important;
+    font-weight: bold !important;
+    margin: 10px;
+}
+
 @media(max-width: 992px){
     .icon-logo-dark{
         width: 100%;
+    }
+}
+@media(max-width: 576px){
+    .about-btn-dark{
+        padding: 3% 7% !important;
+        font-size: 13px !important;
+    }
+    .contact-btn-dark{
+        padding: 10px 7.5px !important; 
     }
 }

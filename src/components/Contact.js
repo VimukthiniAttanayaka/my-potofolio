@@ -29,7 +29,7 @@ function Contact(props) {
                             <Form.Label className={props.theme?"white-text":""}>Your Message</Form.Label>
                             <Form.Control as="textarea" divs={3} />
                         </Form.Group>
-                        <Button variant="primary" type="submit" className="send-mail-btn">
+                        <Button variant="primary" type="submit" className="send-mail-btn mt-3">
                             Submit
                         </Button>
                     </Form>

@@ -50,9 +50,9 @@ function Home(props) {
                 </div>
             </div>
             <ButtonGroup aria-label="Basic example" className="home-btn-group">
-                <Button onClick={handleShowAbout} className='about-btn'>About</Button>
-                <Button onClick={handleShowWork} className='about-btn'>Work</Button>
-                <Button onClick={handleShowContact} className='about-btn'>Contact</Button>
+                <Button onClick={handleShowAbout} className={props.theme ?"about-btn-dark":'about-btn'}>About</Button>
+                <Button onClick={handleShowWork} className={props.theme ?"about-btn-dark":'about-btn'}>Work</Button>
+                <Button onClick={handleShowContact} className={props.theme ?"about-btn-dark":'about-btn'}>Contact</Button>
             </ButtonGroup>
 
             <Offcanvas
@@ -104,19 +104,19 @@ function Home(props) {
                 <Button
                     href="tel:0755975740"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <PhoneCall />
+                    <PhoneCall className="con-icon"/>
                 </Button>
                 <Button
                     href="https://www.linkedin.com/in/vimukthini-attanayaka-29284a201/"
                     target="_blank"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <Linkedin />
+                    <Linkedin className="con-icon"/>
                 </Button>
                 <Button
                     href="https://github.com/VimukthiniAttanayaka"
                     target="_blank"
                     className={props.theme ? 'contact-btn-dark' : 'contact-btn'}>
-                    <GitHub />
+                    <GitHub className="con-icon"/>
                 </Button>
             </ButtonGroup>
         </div>
